@@ -124,6 +124,28 @@ body {
     background-color: #0056b3;
     transform: translateY(-2px);
 }
+
+/* Mobile responsiveness for hero h1 */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
 h5 {
     color: var(--secondary-color);
 }
@@ -182,6 +204,34 @@ h5 {
     .about-text {
         text-align: left;   /* force left alignment */
         align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 4%;
+    }
+
+    .about-content {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 40px 2%;
+    }
+
+    .about-content {
+        padding: 20px 15px;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 0.95rem;
     }
 }
 
